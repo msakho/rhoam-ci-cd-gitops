@@ -1,0 +1,4 @@
+resources:
+- cart-backend.yaml
+- user-backend.yaml
+- online-product.yaml
