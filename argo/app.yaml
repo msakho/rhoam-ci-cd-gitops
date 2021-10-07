@@ -2,10 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: online-api
-  namespace: api-team1
+  namespace: api-team-1
 spec:
   destination:
-    namespace: api-team1
+    namespace: api-team-1
     server: https://kubernetes.default.svc
   project: default
   source:
