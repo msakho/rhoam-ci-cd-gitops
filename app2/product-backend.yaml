@@ -1,0 +1,10 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Backend
+metadata:
+  name: productbackend
+spec:
+  name: Product Backend
+  privateBaseURL: 'https://fakestoreapi.com'
+  systemName: product_backend
+  providerAccountRef:
+    name: api-team-1-secret

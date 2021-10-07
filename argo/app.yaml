@@ -11,7 +11,7 @@ spec:
   source:
     directory:
       recurse: true
-    path: app
+    path: app2
     repoURL: https://github.com/msakho/rhoam-ci-cd-gitops.git
     targetRevision: main
   syncPolicy:
