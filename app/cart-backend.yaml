@@ -5,6 +5,6 @@ metadata:
 spec:
   name: Cart backend 2
   privateBaseURL: 'https://fakestoreapi.com'
-  systemName: cart_backend2
+  systemName: cart_backend
   providerAccountRef:
     name: api-team-1-secret
