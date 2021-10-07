@@ -1,10 +1,10 @@
 apiVersion: capabilities.3scale.net/v1beta1
 kind: Backend
 metadata:
-  name: userbackend
+  name: userbackend2
 spec:
   name: User Backend
   privateBaseURL: 'https://fakestoreapi.com/users'
-  systemName: user_backend
+  systemName: user_backend2
   providerAccountRef:
     name: dev-tenant-secret

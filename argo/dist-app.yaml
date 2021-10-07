@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: online-api2
+  namespace: api-team2
+spec:
+  destination:
+    namespace: api-team2
+    server: https://api.bitmarck-lab3.006z.p1.openshiftapps.com:6443
+  project: default
+  source:
+    directory:
+      recurse: true
+    path: app
+    repoURL: https://github.com/msakho/rhoam-ci-cd-gitops.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
