@@ -5,7 +5,7 @@ metadata:
 spec:
   name: OnlineProduct 2
   providerAccountRef:
-    name: dev-tenant-secret
+    name: api-team-1-secret
   backendUsages:
     cart_backend:
       path: /carts
