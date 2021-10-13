@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: onlineapp1
-  namespace: argocd
+  name: online-api3
+  
 spec:
   destination:
-    namespace: api-team2
-    server: https://api.bitmarck-lab3.006z.p1.openshiftapps.com:6443
+    namespace: api-team3
+    server: https://kubernetes.default.svc
   project: default
   source:
     directory:
       recurse: true
-    path: app
+    path: app3
     repoURL: https://github.com/msakho/rhoam-ci-cd-gitops.git
     targetRevision: main
   syncPolicy:

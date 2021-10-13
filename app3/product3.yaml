@@ -1,0 +1,11 @@
+apiVersion: capabilities.3scale.net/v1beta1
+kind: Product
+metadata:
+  name: onlineproduct3
+spec:
+  name: OnlineProduct 3
+  providerAccountRef:
+    name: dev-tenant-secret
+  backendUsages:
+    backend3:
+      path: /carts
